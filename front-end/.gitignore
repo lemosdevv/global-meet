@@ -1,0 +1,25 @@
+# Angular
+.angular/
+dist/
+tmp/
+app/**/*.js
+app/**/*.js.map
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDEs
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/*
+
+# System Files
+.DS_Store
+Thumbs.db

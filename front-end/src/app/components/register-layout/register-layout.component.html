@@ -1,0 +1,30 @@
+<main>
+    <section class="form-section">
+      <div class="topo">
+        <img class="logo" src="/svg/logo.svg" />
+        <h2>{{ title }}</h2>
+      </div>
+      <ng-content></ng-content>
+      <div class="btn-wrapper">
+        <button 
+          class="btn-primary" 
+          (click)="submit()"
+          [disabled]="disablePrimaryBtn"
+        >{{ primaryBtnText }}</button>
+        <div class="divider">
+          <p>Already have a account? <span class="sign" (click)="navigate()">Login</span></p>
+          <div></div>
+          <span>or</span>
+          <div></div>
+        </div>
+        <button class="btn-secondary">
+          <img class="google" src="/svg/google.png" />
+          {{ secondaryBtnText }}</button>
+      </div>
+    </section>
+    <section class="main-section">
+      <h1>Global Meet</h1>
+      <img src="/svg/logo.svg" />
+    </section>
+  </main>
+  

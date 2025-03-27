@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@angular/fire": "^19.0.0",
+    "angular-oauth2-oidc": "^19.0.0",
+    "firebase": "^11.5.0"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^5.1.7",
+    "@types/jest": "^29.5.14"
+  }
+}

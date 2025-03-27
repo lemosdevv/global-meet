@@ -1,0 +1,45 @@
+<app-register-layout
+  title="Sign Up!"
+  primaryBtnText="Sign Up"
+  secondaryBtnText="Google"
+  (submit)="submit()"
+  (navigate)="navigate()"
+  [disablePrimaryBtn]="!signupForm.valid"
+>
+  <form [formGroup]="signupForm">
+    <app-primary-input
+      formControlName="name"
+      inputName="name"
+      type="text"
+      label="Your Name"
+      placeholder="Ex: Mateus Lemos"
+    >
+      <img src="/svg/email-icon.svg" />
+    </app-primary-input>
+    <app-primary-input
+      formControlName="email"
+      inputName="email"
+      type="email"
+      label="Email"
+      placeholder="mateus@gmail.com"
+    >
+      <img src="/svg/email-icon.svg" />
+    </app-primary-input>
+    <app-primary-input
+      formControlName="password"
+      inputName="password"
+      type="password"
+      label="Your Password"
+    >
+      <img src="/svg/password-icon.svg" />
+    </app-primary-input>
+    <app-primary-input
+      formControlName="passwordConfirm"
+      inputName="passwordConfirm"
+      type="password"
+      label="Confirm Your Password"
+    >
+      <img src="/svg/password-icon.svg" />
+    </app-primary-input>
+  </form>
+</app-register-layout>

@@ -1,0 +1,41 @@
+
+
+.input-wrapper {
+    color: #000;
+    font-size: 16px;
+    text-align: start;
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    .input-content {
+        width: 100%;
+        border-radius: 8px;
+        display: flex;
+        
+        .icon {
+            padding: 12px;
+            background-color: #0075C3;
+            border-radius: 0 8px 8px 0;
+
+            img {
+                height: 5px;
+            }
+        }
+
+        input {
+            border: none;
+            border-radius: 8px 0 0 8px;
+            border: 1px solid #D9D9D9;
+            background-color: #FFFFFF;
+            box-shadow: 0px 8px 12px #D9D9D9;
+            padding: 12px 0 12px 20px;
+            width: 100%;
+        }
+
+        
+    }
+
+    
+}

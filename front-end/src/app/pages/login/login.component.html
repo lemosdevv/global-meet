@@ -1,0 +1,36 @@
+<app-login-layout
+  title="Login into your account"
+  primaryBtnText="Sign In"
+  secondaryBtnText="Google"
+  (submit)="submit()"
+  (navigate)="navigate()"
+  [disablePrimaryBtn]="!loginForm.valid"
+>
+  <form [formGroup]="loginForm">
+    <app-primary-input
+      formControlName="email"
+      inputName="email"
+      type="email"
+      label="Email"
+      placeholder="mateus@gmail.com"
+    >
+      <img src="/svg/email-icon.svg"/>
+    </app-primary-input>
+
+    <app-primary-input
+      formControlName="password"
+      inputName="password"
+      type="password"
+      label="Your Password"
+    >
+      <img src="/svg/password-icon.svg"/>
+    </app-primary-input>
+    <div class="flex-row">
+      <div>
+      <input type="checkbox">
+      <label>Remember me </label>
+      </div>
+      <span class="span">Forgot password?</span>
+    </div>
+  </form>
+</app-login-layout>
